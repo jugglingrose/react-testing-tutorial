@@ -33,4 +33,5 @@ test('Movie /> with movie', () => {
   expect(console.error).not.toHaveBeenCalled();
   // We want to make sure that the link is linking to the proper place
   expect(getByTestId('movie-link').getAttribute('href')).toBe(`/${movie.id}`);
+  debug();
 });
